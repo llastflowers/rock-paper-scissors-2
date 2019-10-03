@@ -1,10 +1,13 @@
 body {
-    background-image: url('https://wallpaperplay.com/walls/full/d/e/8/137480.jpg');
+    background-image: url('http://sfwallpaper.com/images/gray-abstract-wallpaper-29.jpg');
 }
 
 header {
     display: flex;
     justify-content: center;
+    /*border: dashed white 2px;
+    border-radius: 20px;
+    margin: 20px 400px 20px 400px;*/
 }
 
 h1 {
@@ -14,35 +17,94 @@ h1 {
     text-align: center;
     font-family: Helvetica;
     font-size: 45px;
-    border: dashed darkgrey 2px;
+    color: white;
+    border: dashed white 2px;
     padding: 20px;
-    margin: 40px;
+    margin: 30px;
     border-radius: 20px;
     height: 150px;
     width: 200px;
-    background-color: rgba(189, 189, 189, 40%);
+    background-color: rgba(110, 39, 39, 0.7);
 }
 
 .rules {
-    border: dashed darkgrey 2px;
+    border: dashed white 2px;
+    color: white;
+    font-size: 20px;
     padding: 20px;
-    margin: 40px;
+    margin: 30px;
     border-radius: 20px;
     height: 150px;
-    width: 7500px;
-    background-color: rgba(189, 189, 189, 40%);
+    width: 550px;
+    background-color:rgba(110, 39, 39, 0.7);
+    line-height: 21px;
 }
 
 .radio-image {
-    border: 5px solid transparent;
     border-radius: 25%;
-    width: 100px;
+    width: 300px;
+    margin: 30px;
 }
 
 input:checked + .radio-image {
-    border: 5px dotted rgb(235, 214, 34);
+    box-shadow: 5px 5px 40px 10px white;
 }
 
 input {
     display: none;
+}
+
+.throws,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-size: 45px;
+    color: white;
+    margin: 30px 0px 10px 0px;
+}
+
+.button {
+    background-color: rgba(110, 39, 39, 0.7);
+    color: white;
+    border: solid white 3px;
+    border-radius: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 300px;
+    padding: 20px;
+    outline: 0;
+}
+
+button:active {
+    background-color: rgba(167, 58, 58, 0.7);
+}
+
+.shoot {
+    display: flex;
+    justify-content: center;
+}
+
+.stats {
+    font-family: Helvetica;
+    font-size: 45px;
+    border: solid white 2px;
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    margin: 15px 700px 50px 700px;
+    height: 400px;
+    border-radius: 20px;
+    background-color:rgba(110, 39, 39, 0.7);
+    line-height: 50px;
+}
+
+.hidden {
+    font-size: 50px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
 }
