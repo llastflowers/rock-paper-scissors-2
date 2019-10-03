@@ -1,0 +1,48 @@
+body {
+    background-image: url('https://wallpaperplay.com/walls/full/d/e/8/137480.jpg');
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 45px;
+    border: dashed darkgrey 2px;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    background-color: rgba(189, 189, 189, 40%);
+}
+
+.rules {
+    border: dashed darkgrey 2px;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 20px;
+    height: 150px;
+    width: 7500px;
+    background-color: rgba(189, 189, 189, 40%);
+}
+
+.radio-image {
+    border: 5px solid transparent;
+    border-radius: 25%;
+    width: 100px;
+}
+
+input:checked + .radio-image {
+    border: 5px dotted rgb(235, 214, 34);
+}
+
+input {
+    display: none;
+}
