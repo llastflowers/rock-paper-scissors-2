@@ -21,8 +21,6 @@ const playAgain = () => {
     totalSpan.textContent = totalPlays;
     winSpan.textContent = playerWins;
 
-
-
 };
 
 const updateSpans = () => {
@@ -45,31 +43,46 @@ const updateSpans = () => {
 const selectedRadioImage = document.querySelector('input:checked');
 const userSelectedImage = selectedRadioImage.value;
 
-//     // make changes to state and dom
-//     totalPlays++;
-//     const randomThrow = getRandomThrow();
-//     const computerChoice = getComputerChoice(randomThrow);
-//     const won = playerWon(playerChoice, computerChoice);
+       // make changes to state and dom
+totalPlays++;
+const randomNumber = getRandomThrow();
+const computerChoice = getComputerChoice(randomNumber);
+const win = playerWon(playerChoice, computerChoice);
+const lose = playerLost(playerChoice, computerChoice);
+const draw = itsADraw(playerChoice, computerChoice);
 
-//     if (won) {
-//         playerWins++;
-//     }
+if (win) {
+    playerWins++;
+} if (lose) {
+    playerLosses++;
+} if (draw) {
+    itsADraw++;
+}
 
-//     resultSpan.textContent = randomlyFlippedSide;
-//     summarySpan.classList.remove('hidden');
-//     updateSpans();
-// };
+let result = checkResult(playerChoice, computerChoice);   
+
+if (result === 'win') {
+    gameResults.textContent = 'You Won!';
+} else if (result === 'lose'){
+    gameResults.textContent = 'You Lost!';
+} else if (result === 'draw'){
+    gameResults.textContent = 'It\'s a Draw!';
+}
 
 // // add event listeners
-// rematchButton.addEventListener('click', playAgain);
 
 
 shootButton.addEventListener('click', () => {
     const computerChoice = getRandomThrow();
+    totalPlays = totalPlays + 1;
+    playerWins = playerWins + 1;
+    playerLosses = playerLosses + 1;
+    playerDraws = playerDraws + 1;
+    
+    totalSpan.textContent = totalPlays;
+    winSpan.textContent = totalPlays;
+    loseSpan.textContent = totalPlays;
+    drawSpan.textContent = totalPlays;
+
     // compare throws and determine winner??
 });
-
-// totalPlays = totalPlays + 1;
-// playerWins = playerWins + 1;
-// playerLosses = playerLosses + 1;
-// playerDraws = playerDraws + 1;
