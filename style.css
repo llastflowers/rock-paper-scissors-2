@@ -76,7 +76,7 @@ h2 {
     font-weight: bold;
     width: 300px;
     padding: 20px;
-    outline: 0;
+    outline: 0;   <br>
 }
 
 button:active {
@@ -104,8 +104,19 @@ button:active {
 }
 
 .hidden {
-    font-size: 70px;
-    padding: 40px;
+    font-size: 60px;
+    margin: 15%;
     display: flex;
     justify-content: center;
+}
+
+.computer-chose {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: -15%;
+
+}
+
+#summary {
+    font-size: 59px;
 }
