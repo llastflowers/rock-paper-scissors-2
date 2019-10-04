@@ -18,20 +18,12 @@ let totalPlays = 0;
 
 // define DOM utility function
 
-// const playAgain = () => {
-//     playerWins = 0;
-//     playerLosses = 0;
-//     playerDraws = 0;
-//     totalPlays = 0;
-//     summarySpan.classList.add('hidden');
-//     updateSpans();
-// };
-        // grab values
+// grab values
 
 const selectedRadioImage = document.querySelector('input:checked');
 const playerChoice = selectedRadioImage.value;
 
-       // make changes to state and dom
+// make changes to state and dom
 const resultChecker = () => {
     const computerChoice = getRandomThrow();
     const result = checkResult(playerChoice, computerChoice);   
