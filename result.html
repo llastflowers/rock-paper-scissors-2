@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors!</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rock! Paper! Scissors!</h1>
+        <section class="rules">You know the drill!<br><br>
+            <em>...But just in case you don't:</em><br><br>
+            ★Paper beats Rock! ★Rock beats Scissors! ★Scissors beats Paper!<br><br>
+            Can you beat the computer?
+        </section>
+    </header>
+    <section class="stats">
+        <summary id="summary" class="hidden">You...<span id="result"></span></summary>
+       
+        <summary>Total plays: <span id="total"></span></summary>
+        
+        <summary>Wins: <span id="win"></span></summary>
+        
+        <summary>Losses: <span id="lose"></span></summary>
+       
+        <summary>Draws: <span id="draw"></span></summary>
+    </section>    
+    <section class="shoot"><a href="./index.html"><button class="button" id="replay-button">Rematch!</button></a></section>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

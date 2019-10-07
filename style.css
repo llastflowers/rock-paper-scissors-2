@@ -1,0 +1,120 @@
+body {
+    background-image: url('http://sfwallpaper.com/images/gray-abstract-wallpaper-29.jpg');
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 45px;
+    color: white;
+    border: dashed white 2px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    background-color: rgba(110, 39, 39, 0.7);
+}
+
+.rules {
+    border: dashed white 2px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    height: 150px;
+    width: 550px;
+    background-color:rgba(110, 39, 39, 0.7);
+    line-height: 21px;
+}
+
+.radio-image {
+    border-radius: 25%;
+    width: 300px;
+    margin: 30px;
+}
+
+input:checked + .radio-image {
+    box-shadow: 5px 5px 40px 10px white;
+}
+
+input {
+    display: none;
+}
+
+.throws,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-size: 45px;
+    color: white;
+    margin: 30px 0px 10px 0px;
+}
+
+.button {
+    background-color: rgba(110, 39, 39, 0.7);
+    color: white;
+    border: solid white 3px;
+    border-radius: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 300px;
+    padding: 20px;
+    outline: 0;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgba(167, 58, 58, 0.7);
+}
+
+.shoot {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 100px 0px;;
+}
+
+.stats {
+    font-family: Helvetica;
+    font-size: 45px;
+    border: solid white 2px;
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    margin: 50px 700px 50px 700px;
+    height: 600px;
+    border-radius: 20px;
+    background-color:rgba(110, 39, 39, 0.7);
+    line-height: 50px;
+}
+
+.hidden {
+    font-size: 60px;
+    margin: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.computer-chose {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: -15%;
+
+}
+
+#summary {
+    font-size: 59px;
+}

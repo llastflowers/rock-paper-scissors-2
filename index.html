@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors!</title>
+</head>
+
+<body>
+
+        <a id="top"></a>
+
+    <header>
+        <h1>Rock! Paper! Scissors!</h1>
+        <section class="rules">You know the drill!<br><br>
+            <em>...But just in case you don't:</em><br><br>
+            ★Paper beats Rock! ★Rock beats Scissors! ★Scissors beats Paper!<br><br>
+            Can you beat the computer?
+        </section>
+    </header>
+    <h2>CHOOSE YOUR FIGHTER!</h2>
+    <section class="throws">
+            <label>
+              
+                <input name="throw" value="rock" type="radio" checked />
+                <img class="radio-image" src="assets/rock-face-right.jpg">
+            </label>
+            <label>
+                
+                <input name="throw" value="paper" type="radio" />
+                <img class="radio-image" src="assets/paper-face-right.jpg">
+            </label>
+            <label>
+                
+                    <input name="throw" value="scissors" type="radio" />
+                    <img class="radio-image" src="assets/scissors-face-right.jpg">
+            </label>
+        </section>
+        <br><br>
+        <section class="shoot"><a href="#bottom"><button class="button" id="shoot-button">Shoot!</button></a></section>
+
+        <section class="stats">
+                <section class=computer-chose>Computer chose <span id="computer-chose"></span></section>
+                <br>
+                <summary id="summary" class="hidden">[result]</summary>
+                <summary>Total plays: <span id="total">0</span></summary>
+                <br>
+                <summary>Wins: <span id="win">0</span></summary>
+                <br>
+                <summary>Losses: <span id="lose">0</span></summary>
+                <br>
+                <summary>Draws: <span id="draw">0</span></summary>
+            </section>    
+            
+            <section class="shoot"><a href="#top"><button class="button" id="replay-button">Rematch!</button></a></section>
+
+            <a id="bottom"></a>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
